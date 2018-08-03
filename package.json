@@ -1,0 +1,25 @@
+{
+  "name": "cmg",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "clean": "rm -rf ./node_modules; rm package-lock.json"
+  },
+  "dependencies": {
+    "bunyan": "1.8.12",
+    "lodash": "4.17.10"
+  },
+  "devDependencies": {
+    "eslint-config-ag": "2.0.0",
+    "jest": "22.4.1",
+    "ci-publish": "1.3.1"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  }
+}
